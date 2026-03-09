@@ -11,6 +11,6 @@ resource "aws_instance" "ec2" {
 
 }
 data "aws_security_group" "sg" {
-  name = "my-security-group"
+  name = "my-sg"
   vpc_id = "vpc-01cc81afcbfb74343"
 }
