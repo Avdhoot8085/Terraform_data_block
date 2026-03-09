@@ -6,7 +6,7 @@ resource "aws_instance" "ec2" {
   instance_type = var.instance_type
   subnet_id = var.subnet_id
   security_groups = [ data.aws_security_group.sg.id]
-  key_name = [data.aws_key_pair.key.id]
+  key_name = data.aws_key_pair.key.id
     tags = {
         Name = "EC2-Instance"
     }
