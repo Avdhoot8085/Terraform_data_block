@@ -14,3 +14,6 @@ data "aws_security_group" "sg" {
   name = "my-sg"
   vpc_id = "vpc-01cc81afcbfb74343"
 }
+data "aws_key_pair" "key_name" {
+  key_name = "Avdhoot-key"
+}
