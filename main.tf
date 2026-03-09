@@ -1,3 +1,13 @@
+terraform {
+  backend "s3" {
+    bucket = "s3-bucket-connect-securely "
+    key = "terrafrom.tfstate"
+    region = "ap-south-1"
+  }
+}
+
+
+
 provider "aws" {
   region = var.aws_region
 }
